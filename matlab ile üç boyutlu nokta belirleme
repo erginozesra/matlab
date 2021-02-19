@@ -1,0 +1,12 @@
+figure(1);
+cizgi=3;
+xlabel(' x ekseni');
+ylabel(' y ekseni');
+zlabel(' z ekseni');
+A=[ 4 1 1];
+quiver3(2,2,0,1,0,0,'r','LineWidth',cizgi);  hold on
+quiver3(2,2,0,0,-1,0,'g','LineWidth',cizgi); 
+quiver3(2,2,0,0,0,1,'b','LineWidth',cizgi);
+text(2,2,0, 'A')
+view(45,45);
+axis([0 8 0 8 0 8])
